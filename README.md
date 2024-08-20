@@ -1,68 +1,78 @@
-![Meteora](thumbnail.png)
+# Projeto React: Aprimoramento com Context API e Hooks
 
-# Meteora - E-commerce de Moda
+Este projeto é uma refatoração que tem como objetivo melhorar a estrutura e performance de uma aplicação React existente. Através do uso de Context API para evitar o prop drilling, useReducer para encapsulamento de lógica, e hooks personalizados, buscamos otimizar o desenvolvimento e manutenção do código. Utilizamos também useEffect e useMemo para aprimorar a performance geral da aplicação. O projeto foi criado utilizando Vite e JavaScript.
 
-O Meteora é um projeto de e-commerce em fase de desenvolvimento inicial. Este README fornece informações sobre o projeto, suas funcionalidades e como executá-lo em seu ambiente local.
+## Tecnologias e Ferramentas
 
-![GIF da aplicação em execução](meteora-app.gif)
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite**: Ferramenta de construção e desenvolvimento de aplicações frontend.
+- **JavaScript**: Linguagem de programação utilizada no projeto.
+- **Context API**: Para gerenciar o estado global e evitar o prop drilling.
+- **useReducer**: Para encapsular a lógica de estado em uma única função redutora.
+- **useEffect**: Para efeitos colaterais e sincronização de componentes.
+- **useMemo**: Para otimização de performance, evitando cálculos desnecessários.
+- **Hooks personalizados**: Para criar lógica reutilizável e modular.
 
-## 🔨 Funcionalidades do projeto
+## Funcionalidades
 
-Neste estágio inicial de desenvolvimento, o Meteora possui as seguintes funcionalidades:
+- **Remoção de Prop Drilling**: Implementação da Context API para evitar a passagem de props através de múltiplos níveis de componentes.
+- **Encapsulamento de Lógica**: Utilização do useReducer para gerenciar e encapsular a lógica de estado de forma eficiente.
+- **Performance Melhorada**: Aplicação de useEffect e useMemo para otimizar a renderização e a execução de cálculos.
+- **Hooks Personalizados**: Criação de hooks personalizados para reutilização e modularidade do código.
 
-- Adicionar itens ao carrinho
-- Remover itens do carrinho
-- Visualizar a página do carrinho
-- Deletar itens do carrinho
+## Instruções de Instalação
 
-O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/R5ATrWK1nC44Eyeo6XZXlr/Meteora---Context-API?node-id=2386%3A2430&mode=dev).
+1. **Clone o Repositório**
 
-## ✔️ Técnicas e tecnologias utilizadas
+   ```bash
+   git@github.com:CelsoSiqueira1996/React_ContexAPI.git
+   cd nome-do-repositorio
 
-O projeto Meteora utiliza as seguintes tecnologias e bibliotecas:
+2. **Instale as Dependências**
 
-- `React` - Framework JavaScript
-- `Vite` - Build tool para desenvolvimento rápido
-- `JavaScript` - Linguagem de programação principal
-- `Context API` - Para gerenciamento de estado
-- `useReducer` - Para controle de estado
-- `useMemo` - Para otimização de desempenho
-- `Bootstrap` - Framework de design e componentes
+   ```bash
+   npm install
 
-## 🛠️ Abrir e rodar o projeto
+3. **Inicie o Servidor de Desenvolvimentoo**
 
-Para executar o projeto Meteora em seu ambiente local, siga estas etapas:
+   ```bash
+   npm run dev
 
-1. Certifique-se de ter o Node.js instalado em sua máquina.
+## Estrutura do Projeto
 
-2. Baixe o repositório do projeto:
+- **/src**: Código-fonte da aplicação.
+  - **/components**: Componentes React.
+  - **/context**: Arquivos relacionados à Context API.
+  - **/hooks**: Hooks personalizados.
+  - **/reducers**: Arquivos de reducers para o useReducer.
+  - **/utils**: Funções utilitárias e helpers.
+- **/public**: Arquivos estáticos e recursos públicos.
+- **vite.config.js**: Configuração do Vite.
 
-3. Extraia os arquivos para uma pasta de sua preferência.
+## Exemplos de Uso
 
-4. Navegue até a pasta em questão via terminal (cmd):
+### Context API
 
-```bash
-cd repo-meteora
-```
+Definimos um contexto global para gerenciar o estado da aplicação sem precisar passar props manualmente para cada nível de componente.
 
-5. Instale as dependências usando o npm:
+### useReducer
 
-```bash
-npm install
-```
+Usamos o useReducer para gerenciar estados complexos e ações de forma centralizada, melhorando a clareza e manutenção do código.
 
-6. Inicie o projeto localmente:
+### useEffect
 
-```bash
-npm run dev
-```
+Utilizamos useEffect para lidar com efeitos colaterais como chamadas API e sincronização de estados com o ciclo de vida dos componentes.
 
-7. Abra seu navegador e acesse a url exibida no seu terminal para visualizar o projeto.
+### useMemo
 
-## 📚 Mais informações do projeto
+Aplicamos useMemo para evitar cálculos caros durante renderizações, melhorando a performance da aplicação.
 
-O Meteora é um e-commerce fictício de moda em constante desenvolvimento. Este projeto visa aprimorar as habilidades em React, e apresentar a Context API como uma solução para gerenciamento de estados globais de uma aplicação React.
+## Contribuição
 
-O design e protótipo deste projeto podem ser encontrados [aqui](https://www.figma.com/file/R5ATrWK1nC44Eyeo6XZXlr/Meteora---Context-API?node-id=2386%3A2430&mode=dev).
+Se você deseja contribuir para este projeto, fique à vontade para abrir uma issue ou enviar um pull request. Por favor, siga as diretrizes de contribuição estabelecidas.
 
-Aproveite o desenvolvimento e aprimoramento do Meteora!
+## Licença
+
+Este projeto está licenciado sob a Licença MIT.
+
+
