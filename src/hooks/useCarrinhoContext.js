@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ADD_PRODUTO, REMOVE_PRODUTO, UPDATE_QUANTIDADE } from "../reducers/carrinhoReducer";
+import { ADD_PRODUTO, REMOVE_PRODUTO, UPDATE_QUANTIDADE } from "@/reducers/carrinhoReducer";
 import { CarrinhoContext } from "@/context/CarrinhoContext";
 
 function addProdutoAction(novoProduto) {
