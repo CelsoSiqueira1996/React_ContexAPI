@@ -2,7 +2,7 @@ import React from "react";
 import Botao from "@/components/Botao";
 import ResumoCompra from "./ResumoCompra";
 import { useNavigate } from "react-router-dom";
-import { useCarrinhoContext } from "@/Hooks/useCarrinhoContext";
+import { useCarrinhoContext } from "@/hooks/useCarrinhoContext";
 
 const Sumario = () => {
   const navigate = useNavigate();
